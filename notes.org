@@ -1,0 +1,4 @@
+* Tasks
+** TODO Use =org-directory= replace ~~/org~
+  [2023-11-12 Sun]
+  [[file:~/.config/emacs/lisp/init-org.el::setq org-agenda-files '("~/org/Inbox.org" "~/org/diary.org" "~/org/todo.org")]]

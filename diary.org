@@ -1,0 +1,10 @@
+
+* 2023
+** 2023-11 November
+*** 2023-11-12 Sunday
+**** Org Capture
+我终于会用 =org-capture-templates= ，非常好的功能。
+Entered on [2023-11-12 Sun 21:07
+**** 逆天的《胜利之歌》
+不是说这首歌逆天，是把它当做国党的歌、或者唱国党的歌的人逆天
+Entered on [2023-11-12 日 21:32]

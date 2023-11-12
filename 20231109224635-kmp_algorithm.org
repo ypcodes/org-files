@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       18b521b4-71fd-49b4-902a-084b68133a87
+:ROAM_ALIASES: "String Matching" "Brute Force(String Match)"
+:END:
+#+title: KMP Algorithm
+#+filetags: :String Matching:Brute Force(String Matching):
+
+* Brute Force algorithm
+BF的算法的解决方案是很直接的，从最开始的字符开始，直接比较str1和str2的每一个字符.
+这样的做法无疑是有效的，但是问题在于，这个算法的最坏情况是 $O(nm)$, 如果我们假设两个字符串的长度分别是n和m，就是最好的情况，也是 $O(m)$.
+
+* Knuth-Morris-Pratt algorithm 
+** Idea
+为了改进这个算法，我们仔细观察匹配的过程：
+
+#+begin_example
+str1 = "abcdababcdartasba"
+str2 = "abcdababcdma"
+#+end_example
+
+观察两次的匹配情况，我们可以发现，如果下一次有可能匹配成功的话，它是从str2最开始的字符开始比较，要是不考虑匹配失败的情况，str2最后的字符串有和前面相同的，我们可以直接从这里开始，因为中间的是匹配成功的，但是和前面的不同。
+
+为了方便，最好就是对字符串做一些预处理再来匹配。
+
+** Pre-Process: LPS(Longest prefix suffix)
+
+我们从str2（子串）的第一个字符开始，开有多少个最后有多少字符与开头匹配上，因为我们的想法和前面一样，如果是在index为i的为位置最后匹配成功的位置，如果后面有和开头相同的，我们就不同管中间的，因为在str1中，因为已经匹配成功了，中间和前面不一样的我们就可以不用管。
+
+依照这样的想法，我们维护一个数组，第i个位置的值就是最后知道这个字符有多少和开头匹配:
+
+这个数组的 =i-th= 元素的值就是在这个位置匹配失败后，str2下次应该从哪里开始匹配。
+
+

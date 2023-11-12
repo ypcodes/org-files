@@ -1,0 +1,9 @@
+* TOC :toc:
+- [[#inbox][Inbox]]
+  - [[#useful-tools][Useful tools]]
+  - [[#books-to-read][Books to read]]
+
+* Tasks
+** TODO Improve org capture templates
+  
+  [[file:~/.config/emacs/lisp/init-org.el]]
