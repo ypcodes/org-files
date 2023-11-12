@@ -7,3 +7,6 @@
 ** TODO Improve org capture templates
   
   [[file:~/.config/emacs/lisp/init-org.el]]
+** TODO test
+  
+  [[file:~/.config/emacs/lisp/init-org.el]]
