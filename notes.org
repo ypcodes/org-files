@@ -1,7 +1,4 @@
 #+title: notes
-#+latex_header: \usepackage{ctex}
-#+latex_compiler: xelatex
-#+latex_class: book
 * 关于历史接近真实和客观历史的观念 :NOTE:
 :LOGBOOK:
 CLOCK: [2023-11-12 日 23:30]--[2023-11-12 日 23:37] =>  0:07
